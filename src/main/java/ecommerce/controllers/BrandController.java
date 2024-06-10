@@ -17,6 +17,7 @@ public class BrandController {
   
   @PostMapping("AddBrand")
    public String addBrand(@RequestBody BrandModel brandModel) {
+	  System.out.println("ADD A NEW BRAND");
 	  return brandService.addBrand(brandModel);
   }
   
